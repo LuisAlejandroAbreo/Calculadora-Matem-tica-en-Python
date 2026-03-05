@@ -6,10 +6,16 @@ def es_primo(n):
             return False
     return True
 
-def numeros_primos(inicio, fin):
-    for n in range(inicio, fin + 1):
-        if es_primo(n):
-         return n
+def numeros_primos():
+    inicio = int(input("  Valor inicial: "))
+    fin = int(input("  Valor final:   "))
+
+    primos = [n for n in range(inicio, fin + 1) if es_primo(n)]
+
+    print(f"\n  Primos entre {inicio} y {fin}:")
+    print(f"  {primos}")
+    print(f"  Total: {len(primos)} números primos")
+    print("----------------------------------")
 
 def verificar_primo():
     pass
@@ -21,3 +27,4 @@ def factorial():
 def maximo_comun_divisor():
     pass
 
+numeros_primos()
