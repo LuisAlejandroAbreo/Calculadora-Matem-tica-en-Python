@@ -40,3 +40,23 @@ def num_capicua():
         print(f"\nEl número {num} es capicúa.")
     else:
         print(f"\nEl número {num} no es capicúa.")
+
+def num_perfecto():
+    while True:
+        try:
+            num = int(input("Ingrese un número entero: "))
+            break
+        except ValueError:
+            print("Error: Debe ingresar un número entero válido.")
+
+    if num < 2:
+        print(f"\nEl número {num} no es perfecto.")
+        return
+
+    divisores = [i for i in range(1, num) if num % i == 0]
+    suma_divisores = sum(divisores)
+
+    if suma_divisores == num:
+        print(f"\nEl número {num} es perfecto.")
+    else:
+        print(f"\nEl número {num} no es perfecto.")
