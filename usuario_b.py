@@ -45,4 +45,3 @@ def calcular_factorial():
 def maximo_comun_divisor():
     pass
 
-calcular_factorial()
