@@ -18,7 +18,12 @@ def numeros_primos():
     print("----------------------------------")
 
 def verificar_primo():
-    pass
+
+    if es_primo(n):
+        print(f"\n {n} ES un número primo.")
+    else:
+        print(f"\n {n} NO es un número primo.")
+    print("---------------------------------------")
 
 def factorial():
     pass
