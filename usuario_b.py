@@ -42,6 +42,19 @@ def calcular_factorial():
         print(f"\n  {n}! = {factorial(n)}")
     print("-----------------")
 
-def maximo_comun_divisor():
-    pass
+def mcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
 
+def maximo_comun_divisor():
+    print("\n--- Máximo Común Divisor ---")
+    a = int(input("  Ingresa el primer número:  "))
+    b = int(input("  Ingresa el segundo número: "))
+    print(f"\n  MCD({a}, {b}) = {mcd(a, b)}")
+    print("----------------------------")
+
+numeros_primos()
+verificar_primo()
+calcular_factorial()
+maximo_comun_divisor()
