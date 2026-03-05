@@ -48,5 +48,9 @@ def mcd(a, b):
     return a
 
 def maximo_comun_divisor():
-    pass
+    print("\n--- Máximo Común Divisor ---")
+    a = int(input("  Ingresa el primer número:  "))
+    b = int(input("  Ingresa el segundo número: "))
+    print(f"\n  MCD({a}, {b}) = {mcd(a, b)}")
+    print("----------------------------")
 
