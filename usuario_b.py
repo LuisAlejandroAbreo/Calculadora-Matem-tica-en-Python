@@ -19,6 +19,9 @@ def numeros_primos():
 
 def verificar_primo():
 
+    print("\n--- Verificar si un Número es Primo ---")
+    n = int(input("  Ingresa un número: "))
+
     if es_primo(n):
         print(f"\n {n} ES un número primo.")
     else:
@@ -33,3 +36,4 @@ def maximo_comun_divisor():
     pass
 
 numeros_primos()
+verificar_primo()
