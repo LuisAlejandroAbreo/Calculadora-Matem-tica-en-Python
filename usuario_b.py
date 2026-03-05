@@ -34,6 +34,3 @@ def factorial():
 
 def maximo_comun_divisor():
     pass
-
-numeros_primos()
-verificar_primo()
