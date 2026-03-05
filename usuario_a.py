@@ -26,3 +26,17 @@ def serie_fibonacci():
 
     print(f"\nLos primeros {n} términos de la serie Fibonacci son:")
     print(resultado)
+
+def num_capicua():
+    while True:
+        try:
+            num = int(input("Ingrese un número entero: "))
+            break
+        except ValueError:
+            print("Error: Debe ingresar un número entero válido.")
+
+    num_str = str(num)
+    if num_str == num_str[::-1]:
+        print(f"\nEl número {num} es capicúa.")
+    else:
+        print(f"\nEl número {num} no es capicúa.")
