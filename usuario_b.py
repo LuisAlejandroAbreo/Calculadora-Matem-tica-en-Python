@@ -33,5 +33,16 @@ def factorial(n):
         return 1
     return n * factorial(n - 1)
 
+def calcular_factorial():
+    print("\n--- Factorial ---")
+    n = int(input("  Ingresa un número: "))
+    if n < 0:
+        print("\n  ✘ El factorial no está definido para números negativos.")
+    else:
+        print(f"\n  {n}! = {factorial(n)}")
+    print("-----------------")
+
 def maximo_comun_divisor():
     pass
+
+calcular_factorial()
