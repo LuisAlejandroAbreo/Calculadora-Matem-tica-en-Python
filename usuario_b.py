@@ -28,9 +28,20 @@ def verificar_primo():
         print(f"\n {n} NO es un número primo.")
     print("---------------------------------------")
 
-def factorial():
-    pass
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n - 1)
 
+def calcular_factorial():
+    print("\n--- Factorial ---")
+    n = int(input("  Ingresa un número: "))
+    if n < 0:
+        print("\n  ✘ El factorial no está definido para números negativos.")
+    else:
+        print(f"\n  {n}! = {factorial(n)}")
+    print("-----------------")
 
 def maximo_comun_divisor():
     pass
+
