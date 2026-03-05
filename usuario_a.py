@@ -60,3 +60,6 @@ def num_perfecto():
         print(f"\nEl número {num} es perfecto.")
     else:
         print(f"\nEl número {num} no es perfecto.")
+
+
+num_perfecto()
