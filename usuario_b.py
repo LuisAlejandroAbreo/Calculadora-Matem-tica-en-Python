@@ -54,3 +54,7 @@ def maximo_comun_divisor():
     print(f"\n  MCD({a}, {b}) = {mcd(a, b)}")
     print("----------------------------")
 
+numeros_primos()
+verificar_primo()
+calcular_factorial()
+maximo_comun_divisor()
