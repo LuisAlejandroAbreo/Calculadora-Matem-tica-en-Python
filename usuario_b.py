@@ -18,7 +18,15 @@ def numeros_primos():
     print("----------------------------------")
 
 def verificar_primo():
-    pass
+
+    print("\n--- Verificar si un Número es Primo ---")
+    n = int(input("  Ingresa un número: "))
+
+    if es_primo(n):
+        print(f"\n {n} ES un número primo.")
+    else:
+        print(f"\n {n} NO es un número primo.")
+    print("---------------------------------------")
 
 def factorial():
     pass
@@ -26,5 +34,3 @@ def factorial():
 
 def maximo_comun_divisor():
     pass
-
-numeros_primos()
