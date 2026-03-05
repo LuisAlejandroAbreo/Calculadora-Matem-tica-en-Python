@@ -42,6 +42,11 @@ def calcular_factorial():
         print(f"\n  {n}! = {factorial(n)}")
     print("-----------------")
 
+def mcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
 def maximo_comun_divisor():
     pass
 
