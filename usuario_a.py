@@ -40,3 +40,5 @@ def num_capicua():
         print(f"\nEl número {num} es capicúa.")
     else:
         print(f"\nEl número {num} no es capicúa.")
+
+num_capicua()
